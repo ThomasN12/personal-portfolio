@@ -3,7 +3,7 @@
     --color-light: #f4f4f4;
     --color-dark: #525252;
     --color-black: #141415;
-    --color-primary: #f24e1e;
+    --color-primary: #fca311;
     --color-primary-light: hsl(14, 89%, 53%, 12%);
     --color-warning: #ffce31;
     --transition: all 300ms ease;
@@ -20,7 +20,7 @@
 }
 
 html {
-    font-size: 15px;
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
@@ -53,7 +53,7 @@ h4 {
 }
 
 h5 {
-    font-size: 0.86rem;
+    font-size: 1rem;
 }
 
 p {
@@ -68,6 +68,7 @@ p {
 section {
     padding: 10rem 0 7rem;
     max-width: 100vw;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -287,26 +288,6 @@ section.about p {
     margin-bottom: 1rem;
 }
 
-section.about .container .read-more-content {
-    display: none;
-}
-
-/*READ MORE*/
-section.about .container .read-more-content.show-content{
-    display: block;
-}
-
-section.about .container .read-more {
-    display: block;
-    margin: 1rem 0 2rem;
-    color: var(--color-primary);
-    cursor: pointer;
-}
-
-section.about .container .read-more {
-    text-decoration: underline;
-}
-
 /*============================== SKILL SECTION ======================*/
 
 section.skills .container {
@@ -347,8 +328,7 @@ section.skills .container .skill .items.show-items {
 }
 section.skills .skill .item {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 1rem;
     padding: 1.6rem;
     background: var(--color-light);
@@ -356,9 +336,24 @@ section.skills .skill .item {
     transition: var(--transition);
 }
 
+section.skills .skill .item img {
+    height: 32px;
+    width: 32px;
+}
+
+section.skills .skill .item h5 {
+    margin-bottom: 0;
+}
+
+section.skills .skill .head h4 {
+    margin-bottom: 0;
+}
+
 section.skills .skill .item:hover {
     background: var(--color-white);
 }
+
+
 
 /*============================== PORTFOLIO ======================*/
 
@@ -372,32 +367,9 @@ section.recent-work h1 {
     width: 65%;
 }
 
-section.recent-work .projects {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 3rem;
+section.recent-work a {
+    color: var(--color-white);
 }
-
-section.recent-work .projects .project {
-    display: flex;
-    /*Flex to activate gap*/
-    gap: 1rem;
-    flex-direction: column;
-}
-
-section.recent-work .projects .project .action {
-    display: flex;
-    gap: 2rem;
-}
-
-section.recent-work .projects .action a {
-    color: var(--color-primary);
-}
-
-section.recent-work .projects .action a:hover{
-    text-decoration: underline;
-}
-
 section.recent-work .carousel-item h2{
     color: var(--color-white);
 }
