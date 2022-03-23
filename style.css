@@ -374,7 +374,7 @@ section.recent-work h1 {
 
 section.recent-work .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 3rem;
 }
 
@@ -520,4 +520,9 @@ footer .copyright {
     font-size: 0.8rem;
 }
 
+
+/*My logo*/
+#logo {
+    width: 14%;
+}
 /*====================== MEDIA QUERIES (PHONES) =====================*/
