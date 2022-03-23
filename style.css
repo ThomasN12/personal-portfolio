@@ -398,6 +398,9 @@ section.recent-work .projects .action a:hover{
     text-decoration: underline;
 }
 
+section.recent-work .carousel-item h2{
+    color: var(--color-white);
+}
 /*============================== CONTACT ======================*/
 
 section.contact {
