@@ -1,509 +1,510 @@
 :root {
-    --color-white: #fff;
-    --color-light: #f4f4f4;
-    --color-dark: #525252;
-    --color-black: #141415;
-    --color-primary: #fca311;
-    --color-primary-light: hsl(14, 89%, 53%, 12%);
-    --color-warning: #ffce31;
-    --transition: all 300ms ease;
+  --color-white: #fff;
+  --color-light: #f4f4f4;
+  --color-dark: #525252;
+  --color-black: #141415;
+  --color-primary: #fca311;
+  --color-primary-light: hsl(14, 89%, 53%, 12%);
+  --color-warning: #ffce31;
+  --transition: all 300ms ease;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 html {
-    font-size: 16px;
-    scroll-behavior: smooth;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: var(--color-white);
-    font-family: 'Montserrat', sans-serif;
-    color: var(--color-dark);
-    max-width: 100vw;
+  background: var(--color-white);
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-dark);
+  max-width: 100vw;
 }
 
-h1, h2, h3, h4, h5 {
-    color: var(--color-black);
-    line-height: 1.2;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-black);
+  line-height: 1.2;
 }
 
 h1 {
-    font-size: 3.8rem;
+  font-size: 3.8rem;
 }
 
 h2 {
-    font-size: 2.6rem;
+  font-size: 2.6rem;
 }
 
 h3 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 h4 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 p {
-    line-height: 1.8;
+  line-height: 1.8;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 section {
-    padding: 10rem 0 7rem;
-    max-width: 100vw;
-    min-height: 100vh;
-    overflow-x: hidden;
+  padding: 10rem 0 7rem;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 section h1 {
-    text-align: center;
-    display: block;
-    margin-bottom: 5rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 5rem;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .btn {
-    padding: 1.4rem 3.4rem;
-    font-size: 1.1rem;
-    color: var(--color-black);
-    background: var(--color-white);
-    display: inline-block;
-    margin: 2rem 0;
-    transition: var(--transition);
+  padding: 1.4rem 3.4rem;
+  font-size: 1.1rem;
+  color: var(--color-black);
+  background: var(--color-white);
+  display: inline-block;
+  margin: 2rem 0;
+  transition: var(--transition);
 }
 
 .btn:hover {
-    box-shadow: 0 2rem 2rem var(--color-primary-light);
+  box-shadow: 0 2rem 2rem var(--color-primary-light);
 }
 .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-white)
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 /* NAVBAR */
 nav {
-    width: 100%;
-    height: 5rem;
-    background: var(--color-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    border-bottom: 1px solid var(--color-light);
+  width: 100%;
+  height: 5rem;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  border-bottom: 1px solid var(--color-light);
 }
 
 nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 nav button {
-    display: none;
+  display: none;
 }
 
 nav h3 {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 nav .container ul {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 
 nav .container ul li a {
-    height: 100%;
-    width: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-black);
-    position: relative;
-    transition: var(--transition);
+  height: 100%;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-black);
+  position: relative;
+  transition: var(--transition);
 }
 
 nav .container ul li a:hover {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 nav .container ul li a.active {
-    background: var(--color-primary);
-    color: var(--color-white);
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 /*============================== LANDING SECTION ==============================*/
 
 section.landing {
-    display: grid;
-    place-items: center;
-    position: relative;
-    top: 5rem;
-    padding-bottom: 14rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 5rem;
+  padding-bottom: 14rem;
 }
 
 section.landing .container {
-    display: grid;
-    grid-template-columns: 5rem auto 26rem;
-
+  display: grid;
+  grid-template-columns: 5rem auto 26rem;
 }
 
 section.landing .socials {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 5rem;
 }
 
 section.landing .socials a {
-    font-size: 1.1rem;
-    background: var(--color-light);
-    color: var(--color-dark);
-    padding: 0.3rem;
-    border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition);
+  font-size: 1.1rem;
+  background: var(--color-light);
+  color: var(--color-dark);
+  padding: 0.3rem;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
 }
 
 section.landing .socials a:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 section.landing .info h1 {
-    text-align: left;
-    margin: 0;
+  text-align: left;
+  margin: 0;
 }
 
 section.landing h3 {
-    margin: 2.4rem 0 1rem;
+  margin: 2.4rem 0 1rem;
 }
 
 section.landing .info p {
-    width: 35rem;
+  width: 35rem;
 }
 
 section.landing .profile-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section.landing .profile-area .outer-circle {
-    width: 26rem;
-    height: 26rem;
-    border: 1px solid var(--color-primary);
-    border-radius: 50%;
-    position: relative;
-    /* background: blue; */
-    animation: move 30s linear infinite;
+  width: 26rem;
+  height: 26rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  position: relative;
+  /* background: blue; */
+  animation: move 30s linear infinite;
 }
 
 @keyframes move {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 section.landing .profile-area .outer-circle span {
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    position: absolute;
-    background: var(--color-white);
-    color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 1rem var(--color-primary-light);
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  background: var(--color-white);
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1rem var(--color-primary-light);
 }
 
 section.landing .profile-area .outer-circle span:nth-child(1) {
-    left: calc(50% - 2rem);
-    top: -2rem;
+  left: calc(50% - 2rem);
+  top: -2rem;
 }
 
 section.landing .profile-area .outer-circle span:nth-child(2) {
-    left: -2rem;
-    top: calc(50% - 2rem);
+  left: -2rem;
+  top: calc(50% - 2rem);
 }
 
 section.landing .profile-area .outer-circle span:nth-child(3) {
-    right: -2rem;
-    top: calc(50% - 2rem);
+  right: -2rem;
+  top: calc(50% - 2rem);
 }
 
 section.landing .profile-area .outer-circle span:nth-child(4) {
-    bottom: -2rem;
-    left: calc(50% - 2rem);
+  bottom: -2rem;
+  left: calc(50% - 2rem);
 }
 
 section.landing .profile-area .inner-circle {
-    /* display: none; */
-    position: absolute;
-    width: 18rem;
-    height: 18rem;
-    border-radius: 50%;
-    overflow: hidden;
+  /* display: none; */
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 /*============================== ABOUT SECTION ==============================*/
 section.about {
-    background: var(--color-light);
+  background: var(--color-light);
 }
 
 section.about .container {
-    display: grid;
-    grid-template-columns: 26rem auto;
-    gap: 5rem;
+  display: grid;
+  grid-template-columns: 26rem auto;
+  gap: 5rem;
 }
 
 section.about p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*============================== SKILL SECTION ======================*/
 
 section.skills .container {
-    width: 50%;
+  width: 50%;
 }
 
 section.skills .skill {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 section.skills .skill .head {
-    background: var(--color-primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--color-white);
-    padding: 1.6rem;
-    cursor: pointer;
+  background: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  padding: 1.6rem;
+  cursor: pointer;
 }
 
-section.skills .skill .head h4{
-    color: var(--color-white);
+section.skills .skill .head h4 {
+  color: var(--color-white);
 }
 
 section.skills .skill .head .left {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 section.skills .skill .items {
-    display: none;
+  display: none;
 }
 
 /*Show /hide skills*/
 section.skills .container .skill .items.show-items {
-    display: block;
+  display: block;
 }
 section.skills .skill .item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.6rem;
-    background: var(--color-light);
-    margin-bottom: 0.3rem;
-    transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.6rem;
+  background: var(--color-light);
+  margin-bottom: 0.3rem;
+  transition: var(--transition);
 }
 
 section.skills .skill .item img {
-    height: 32px;
-    width: 32px;
+  height: 32px;
+  width: 32px;
 }
 
 section.skills .skill .item h5 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 section.skills .skill .head h4 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 section.skills .skill .item:hover {
-    background: var(--color-white);
+  background: var(--color-white);
 }
-
-
 
 /*============================== PORTFOLIO ======================*/
 
 section.recent-work {
-    background: var(--color-light);
+  background: var(--color-light);
 }
 
 section.recent-work h1 {
-    text-align: left;
-    margin: 3rem 0 1rem;
-    width: 65%;
+  text-align: left;
+  margin: 3rem 0 1rem;
+  width: 65%;
 }
 
 section.recent-work a {
-    color: var(--color-white);
+  color: var(--color-white);
 }
-section.recent-work .carousel-item h2{
-    color: var(--color-white);
-    font-weight: 800;
+section.recent-work .carousel-item h2 {
+  color: var(--color-white);
+  font-weight: 800;
 }
 
-section.recent-work .carousel-item p{
-    font-weight: 600;
-    font-size: 1.5rem;
+section.recent-work .carousel-item p {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 /*============================== CONTACT ======================*/
 
 section.contact {
-    background: url('./images/contact.jpg') no-repeat center center/cover;
-    padding: 0;
-    max-width: 100vw;
+  background: url("./images/contact.jpg") no-repeat center center/cover;
+  padding: 0;
+  max-width: 100vw;
 }
 
 section.contact .overlay {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10rem 0 7rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10rem 0 7rem;
 }
 
 section.contact .container {
-    width: 40%;
+  width: 40%;
 }
 
-section.contact .container h1{
-    margin: 0;
-    color: var(--color-white);
+section.contact .container h1 {
+  margin: 0;
+  color: var(--color-white);
 }
 
 section.contact .container p {
-    text-align: center;
-    color: var(--color-light);
-    opacity: 0.8;
-    margin-top: 0.5rem;
+  text-align: center;
+  color: var(--color-light);
+  opacity: 0.8;
+  margin-top: 0.5rem;
 }
 
 section.contact form {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
-section.contact form input, section.contact form textarea{
-    display: block;
-    width: 100%;
-    margin: 0.5rem 0;
-    padding: 1.6rem;
-    border: 1px solid var(--color-white);
-    background: transparent;
-    color: var(--color-white);
-    transition: var(--transition);
+section.contact form input,
+section.contact form textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1.6rem;
+  border: 1px solid var(--color-white);
+  background: transparent;
+  color: var(--color-white);
+  transition: var(--transition);
 }
 
-section.contact form input:focus, 
+section.contact form input:focus,
 section.contact textarea:focus {
-    background: var(--color-white);
-    color: var(--color-black);
+  background: var(--color-white);
+  color: var(--color-black);
 }
 
-section.contact form input::placeholder, 
+section.contact form input::placeholder,
 section.contact textarea::placeholder {
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 section.contact form .btn {
-    width: 14rem;
-    border: none;
-    background: var(--color-white);
-    color: var(--color-black);
-    margin: 2rem auto 0;
+  width: 14rem;
+  border: none;
+  background: var(--color-white);
+  color: var(--color-black);
+  margin: 2rem auto 0;
 }
 
 section.contact form .btn:hover {
-    background: var(--color-primary);
-    cursor: pointer;
-    color: var(--color-white);
+  background: var(--color-primary);
+  cursor: pointer;
+  color: var(--color-white);
 }
 
 /*===============FOOTER============*/
 footer {
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer .container ul {
-    display: flex;
-    gap: 3rem;
+  display: flex;
+  gap: 3rem;
 }
 
 footer .container ul a {
-    color: var(--color-dark);
+  color: var(--color-dark);
 }
 
 footer .container ul a:hover {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 footer .container .socials {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
-footer .container .socials a{
-    background: var(--color-light);
-    color: var(--color-dark);
-    padding: 0.3rem;
-    border-radius: 50%;
-    transition: var(--transition);
+footer .container .socials a {
+  background: var(--color-light);
+  color: var(--color-dark);
+  padding: 0.3rem;
+  border-radius: 50%;
+  transition: var(--transition);
 }
 
-footer .container .socials a:hover{
-    background: var(--color-primary);
-    color: var(--color-white);
+footer .container .socials a:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 footer .copyright {
-    background: var(--color-primary);
-    color: var(--color-white);
-    text-align: center;
-    margin-top: 5rem;
-    padding: 2rem 0;
-    font-size: 0.8rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  font-size: 0.8rem;
 }
-
 
 /*My logo*/
 #logo {
-    width: 30%;
+  width: 30%;
 }
 /*====================== MEDIA QUERIES (PHONES) =====================*/
